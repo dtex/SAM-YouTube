@@ -1,4 +1,4 @@
-For embeding YouTube videos in SAM sites. Requires jQuery (optionally requires jQuery Tools for liteboxes)
+**Embeds YouTube videos in SAM sites. Requires jQuery (optionally requires jQuery Tools for liteboxes)**
 
 1) To embed a YouTube Video you first need a call to the json data. Change the 
 author property to the YouTube account you are looking at:
@@ -50,4 +50,3 @@ Here is some sample CSS to get you started:
     
     .overlay {padding:9px 40px;	width:576px;display:none;background-color:#fff;}
     .close {background:url(/images/close.png) no-repeat;position:absolute;top:9px;right:12px; display:block;width:21px;height:21px;cursor:pointer;}
-    #player {height:450px;display:block;}
