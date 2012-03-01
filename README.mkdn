@@ -3,12 +3,12 @@ For embeding YouTube videos in SAM sites. Requires jQuery (optionally requires j
 1) To embed a YouTube Video you first need a call to the json data. Change the 
 author property to the YouTube account you are looking at:
 
-<script type="text/javascript" src="http://gdata.youtube.com/feeds/api/videos?callback=yt&amp;alt=json-in-script&amp;orderby=published&amp;author=BrandExtract&amp;v=2&max-results=50"></script>
+'<script type="text/javascript" src="http://gdata.youtube.com/feeds/api/videos?callback=yt&amp;alt=json-in-script&amp;orderby=published&amp;author=BrandExtract&amp;v=2&max-results=50"></script>'
 
 2) Then you need a div to stick the video into. Change the rel property to 
 a keyword match for teh particular video you want to enter
 
-<div class="embedYouTubeVideo" rel="featured"></div>
+'<div class="embedYouTubeVideo" rel="featured"></div>'
 
 If you set rel="all" then all the video in the feed will be output
 
@@ -22,7 +22,9 @@ If you add class "inline" to your div, an inline video player will replace the t
 If you add class "litebox" teh video will play in a litebox. You will also need 
 
 If you are displaying images in a lightbox, you will need flowplayer and jQuery tools:
-<script src="/js/jquery.tools.min.js"></script>
+
+'<script src="/js/jquery.tools.min.js"></script>'
 
 You will also need this in your XSL, before your call for json from YouTube:
-<xsl:text disable-output-escaping="yes"><![CDATA[<div class="overlay" style="background-image:url('/images/spacer.gif')"><a id="player">&nbsp;</a></div>]]></xsl:text>
+
+'<xsl:text disable-output-escaping="yes"><![CDATA[<div class="overlay" style="background-image:url('/images/spacer.gif')"><a id="player">&nbsp;</a></div>]]></xsl:text>'
