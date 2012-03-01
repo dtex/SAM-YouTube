@@ -3,9 +3,7 @@ For embeding YouTube videos in SAM sites. Requires jQuery (optionally requires j
 1) To embed a YouTube Video you first need a call to the json data. Change the 
 author property to the YouTube account you are looking at:
 
-<xsl:text disable-output-escaping='yes'><![CDATA[
-	<script type="text/javascript" src="http://gdata.youtube.com/feeds/api/videos?callback=yt&amp;alt=json-in-script&amp;orderby=published&amp;author=BrandExtract&amp;v=2&max-results=50"></script>
-]]></xsl:text>
+<script type="text/javascript" src="http://gdata.youtube.com/feeds/api/videos?callback=yt&amp;alt=json-in-script&amp;orderby=published&amp;author=BrandExtract&amp;v=2&max-results=50"></script>
 
 2) Then you need a div to stick the video into. Change the rel property to 
 a keyword match for teh particular video you want to enter
