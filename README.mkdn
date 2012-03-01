@@ -5,8 +5,10 @@ author property to the YouTube account you are looking at:
 
 `<script type="text/javascript" src="http://gdata.youtube.com/feeds/api/videos?callback=yt&amp;alt=json-in-script&amp;orderby=published&amp;author=BrandExtract&amp;v=2&max-results=50"></script>`
 
+Note that this only grabs the 50 most recent videos
+
 2) Then you need a div to stick the video into. Change the rel property to 
-a keyword match for teh particular video you want to enter
+a keyword match for the particular video you want to enter
 
 `<div class="embedYouTubeVideo" rel="featured"></div>`
 
