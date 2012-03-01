@@ -19,7 +19,7 @@ By default the videos thumbnails will link to YouTube.
 
 If you add class "inline" to your div, an inline video player will replace the thumbnail
 
-If you add class "litebox" teh video will play in a litebox. You will also need 
+If you add class "litebox" the video will play in a litebox. You will also need 
 
 If you are displaying images in a lightbox, you will need flowplayer and jQuery tools:
 
