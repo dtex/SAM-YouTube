@@ -7,11 +7,11 @@
 		]]></xsl:text>
 		
 		2) Then you need a div to stick the video into. Change the rel property to 
-		a keyword match for teh particular video you want to enter
+		a keyword match for the particular video you want to enter
 		
 		<div class="embedYouTubeVideo" rel="featured"></div>
 		
-		If you set rel="all" then all the video in the feed will be output
+		If you set rel="all" then all the videos in the feed will be output
 		
 		If you add class "multi" to your div, multiple videos will be output in a grid.
 		You can set the column and row variables below to control the size
@@ -27,6 +27,28 @@
 		
 		You will also need this in your XSL, before your call for json from YouTube:
 		<xsl:text disable-output-escaping="yes"><![CDATA[<div class="overlay" style="background-image:url('/images/spacer.gif')"><a id="player">&nbsp;</a></div>]]></xsl:text>
+		
+		Here is some sample CSS to get started:
+		
+		.embedYouTubeVideo { margin-bottom:24px; }
+		.embedYouTubeVideo .vidThumb { height:195px; width:260px; float:left;}
+		.embedYouTubeVideo .vidThumb img.thumb {height:195px; width:260px;border: solid 1px #9c9c9f;}
+		.embedYouTubeVideo .vidThumb img.playButton {position:absolute;margin:67px 0 0 98px;}
+		.embedYouTubeVideo .youTube { float:left; }
+		.embedYouTubeVideo .youTubeVideoDescription { width:188px;float:right;padding: 0 16px;}
+		.embedYouTubeVideo .youTubeVideoDescription p {width:188px;}
+		.embedYouTubeVideo h3 { float:right;width:188px;font-size:13px;font-family:Helvetica, arial, sans-serif;font-weight:bold;padding:0 16px;}
+
+		.embedYouTubeVideo.multi .youtubeVideo {float:left; margin:0 23px 12px 0;width:100px;}
+		.embedYouTubeVideo.multi .youtubeVideo.last {margin:0 0 24px 0;}
+		.embedYouTubeVideo.multi .vidThumb  {float:left; margin:0 23px 12px 0;width:100px;height:75px;}
+		.embedYouTubeVideo.multi .vidThumb img.thumb { width: 100px;height:75px;}
+		.embedYouTubeVideo.multi .vidThumb img.playButton {margin:11px 0 0 20px;}
+		.embedYouTubeVideo.multi h3 { font-weight:normal;width:100px;float:none;padding:0; }
+		.embedYouTubeVideo.multi .youTubeVideoDescription { display:none;}
+
+		.overlay {padding:9px 40px;	width:576px;display:none;background-color:#fff;}
+		.close {background:url(/images/close.png) no-repeat;position:absolute;top:9px;right:12px; display:block;width:21px;height:21px;cursor:pointer;}
 				
 */
 
