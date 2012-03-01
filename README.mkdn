@@ -7,15 +7,15 @@ author property to the YouTube account you are looking at:
 
 Note that this only grabs the 50 most recent videos
 
-2) Then you need a div to stick the video into. Change the rel property to 
-a keyword match for the particular video you want to enter
+2) Next you need a div to stick the video into. Change the rel property to 
+a keyword match for the particular video you want to embed
 
 `<div class="embedYouTubeVideo" rel="featured"></div>`
 
 3) If you set rel="all" then all the videos in the feed will be output
 
 4) If you add class "multi" to your div, multiple videos will be output in a grid.
-You can set the column and row variables below to control the size
+You can set the column and row variables below to control the size. It will also only output the number of videos required to fill your grid.
 
 5) By default the videos thumbnails will link to YouTube, but you add class "inline" to your div, an inline video player will replace the thumbnail. If you add class "litebox" the video will play in a litebox. 
 
