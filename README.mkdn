@@ -19,15 +19,15 @@ You can set the column and row variables below to control the size. It will also
 
 5) By default the videos thumbnails will link to YouTube, but you add class "inline" to your div, an inline video player will replace the thumbnail. If you add class "litebox" the video will play in a litebox. 
 
-6) If you use a litebox you will also need jQuery tools:
+6) If you use a litebox you will also need jQuery tools i.e.:
 
 `<script src="/js/jquery.tools.min.js"></script>`
 
-You will also need this in your XSL, before your call for the json from YouTube:
+7) You will also need this in your XSL, before your call for the json from YouTube:
 
 `<xsl:text disable-output-escaping="yes"><![CDATA[<div class="overlay" style="background-image:url('/images/spacer.gif')"><a id="player">&nbsp;</a></div>]]></xsl:text>`
 
-7) Here is some sample CSS to get you started with that:
+8) Here is some sample CSS to get you started with that:
 
     .embedYouTubeVideo { margin-bottom:24px; }
     .embedYouTubeVideo .vidThumb { height:195px; width:260px; float:left;}
