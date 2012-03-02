@@ -48,3 +48,4 @@ You can set the column and row variables below to control the size. It will also
     
     .overlay {padding:9px 40px;	width:576px;display:none;background-color:#fff;}
     .close {background:url(/images/close.png) no-repeat;position:absolute;top:9px;right:12px; display:block;width:21px;height:21px;cursor:pointer;}
+    #player {height:450px;display:block;}
