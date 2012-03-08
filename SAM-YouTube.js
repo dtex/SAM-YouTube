@@ -54,7 +54,7 @@ var yt = function (data) {
 				j = j + 1;
 				
 				// If this is the last image in a row, add a clearing div
-				if ($this.hasClass('multi') && i !== 1 && (i + 1) % columns === 0) {
+				if (i == myLength || ($this.hasClass('multi') && i !== 1 && (i + 1) % columns === 0)) {
 					$this.append($clear.clone());
 					$container.addClass('last');
 				}
